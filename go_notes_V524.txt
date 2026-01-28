@@ -1,0 +1,45 @@
+<Subject>
+<Conventions>
+    In this document as a convention all commands to input
+        in the CLI starts with '#' e.g. #cd $HOME, #cd ~
+        CLI command:
+            #<command>
+</Conventions>
+
+<911 commands>
+============
+- #go version
+- #echo GOPATH
+	Path should be set (if not...Should be set)
+- Compiling:
+    #go mod init [main]
+    #go build -o helloworld.exe
+    #helloworld.exe
+</911 commands>
+
+
+<Misc>
+====
+-
+</Misc>
+
+<Links Readings & Ref. Material>
+================================
+- Go Data types:
+    https://go.dev/tour/basics/11
+    https://www.w3schools.com/go/go_data_types.php
+-HTML docs : 
+	https://www.w3schools.com/html/html_forms_attributes.asp
+
+</Links Readings & Ref. Material>
+
+
+
+<Notes>
+-
+</Notes>
+<versioning history>
+1.16.2025
+
+</versioning history>
+</Subject>
