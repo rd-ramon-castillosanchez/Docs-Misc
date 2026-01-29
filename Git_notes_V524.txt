@@ -50,6 +50,8 @@ Files states
     #git commit -a -m "updating readme.txt file"
 *How to rename a branch
     #git branch -m [oldbranch] [newbranch]
+*How to change default Main/Master branch
+    #git config --global init.defaultBranch main
 *How to clone an specific branch from remote
     #git clone <url> --branch <branch> --single-branch <folder>
 *How to push for a local repo for the first time
@@ -322,6 +324,7 @@ v. 1/30/2014
 12:50 PM 4/24/2018
 01:02 PM 4/25/2018
 2:01 PM 5/18/2018
+9:20 AM 1/29?2026
 
 </versioning history>
 </Subject>
