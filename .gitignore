@@ -2,3 +2,4 @@ Security/github-recovery-codes.txt
 ./Security/github-recovery-codes.txt
 Security/.*
 ./Security/.*
+.DS_Store
