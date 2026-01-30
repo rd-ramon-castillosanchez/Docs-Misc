@@ -1,19 +1,22 @@
 package main
 
 import (
+    "os"
     "fmt"
-    "log"
+    "strconv"
 )
 
 func main() {
-    fmt.Println("input text:")
-    var n1, n2 , r_distance float32
-    n, err := fmt.Scanln(&n1, &n2)
-    if err != nil {
-        log.Fatal(err)
-    }
+    var r_distance float64
+    argsWithProg := os.Args
+    argsWithoutProg := os.Args[1:]
+    n1 , err := strconv.ParseFloat(os.Args[1],32)
+    n2 , err := strconv.ParseFloat(os.Args[2],32)
     r_distance = n2/n1*100-100
-    fmt.Printf("number of items read: %d\n", n)
+    fmt.Println(err)
     fmt.Printf("read line: %s %s\n", n1, n2)
     fmt.Printf("result: %.2f%%\n",r_distance)
+    fmt.Println(argsWithProg)
+    fmt.Println("---")
+    fmt.Println(argsWithoutProg)
 }
