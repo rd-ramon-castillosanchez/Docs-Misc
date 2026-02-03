@@ -13,14 +13,14 @@ C:\kafka-storage.bat random-uuid
 GvzoxGyuQ4mey5AFLDy0Dw
 
 C:\set KAFKA_CLUSTER_ID=GvzoxGyuQ4mey5AFLDy0Dw
+ >echo "%KAFKA_CLUSTER_ID%"
 
-kafka-storage.bat format --standalone -t $KAFKA_CLUSTER_ID -c config/server.properties
+C:\kafka_2.13-4.1.1\bin\windows>kafka-storage.bat format --standalone -t $KAFKA_CLUSTER_ID -c ..\..\config\server.properties
 
-C:\Users\rcastillo\kafka_2.13-4.1.0>.\bin\windows\kafka-storage.bat format --standalone -t $KAFKA_CLUSTER_ID -c config\server.properties
 
 C:\Users\rcastillo\kafka_2.13-4.1.0>.\bin\windows\kafka-server-start config\server.properties
 
-
+cd C:\kafka_2.13-4.1.1\
 
  .\bin\windows\kafka-broker-api-versions --bootstrap-server localhost:9092
  
