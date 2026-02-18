@@ -299,6 +299,10 @@ The key's randomart image is:
 |   ..+.=.*E      |
 +----[SHA256]-----+
 
+-Checking ssh
+ ssh -T git@gitlab.com
+
+
 To copy file to the clipboard
 C:\Users\A233C1F clip < id_ed25519.pub
 </Misc>
