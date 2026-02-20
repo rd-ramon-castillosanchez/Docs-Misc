@@ -26,6 +26,8 @@
 <Links Readings & Ref. Material>
 ================================
 - GO packages (Go running in Mac as of Feb 2026): https://pkg.go.dev/std@go1.24.12
+- Nice best and effective GO ways 
+    https://go.dev/doc/effective_go
 - Go Data types:
     https://go.dev/tour/basics/11
     https://www.w3schools.com/go/go_data_types.php
