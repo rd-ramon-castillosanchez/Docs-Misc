@@ -120,6 +120,8 @@ Cloning
     #git branch -r (remote) -a (all)
 - Query what branches are currently open
     #git branch
+- Query list of branches local and remotes
+    #git branch -a
 - Change (switches) to the working branch
     #git switch[branchtoswitchto]
         Creates and switches to a new branches
@@ -265,7 +267,9 @@ so before upload the code rename the local branch
   we can use interactive rebase
    #git rebase -i HEAD~x (x the base parent 'commit' to start range to manipulate)
    Min 4:10 on below for more details
-    https://youtu.be/qsTthZi23VE?si=9YRsCEz9VO266yi9 
+    https://youtu.be/qsTthZi23VE?si=9YRsCEz9VO266yi9
+-interactive rebase 
+    #git rebase --interactive HEAD~4 
 <Misc>
 ====
 -CherryPick
