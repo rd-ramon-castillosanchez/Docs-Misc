@@ -5,7 +5,22 @@
         CLI command:
             #<command>
 </Conventions>
+<struct>
+-course Maximilian Schwarzmüller  lessons 76-88
+-Expousing func and var outside to share outside the package
+    -First letter *SHALL* be a capitalized
+     Example:
+     func user ==> function only available inside the package
+     func User ==> will be expoused and available outside the file where is declared
+     
+            type user struct {
+	                firstName string
+	                lastName string
+	                birthdate string
+	                createdAt time.Time
+            }
 
+</struct>
 <911 commands>
 ============
 - #go version
@@ -20,7 +35,7 @@
 
 <Misc>
 ====
--
+
 </Misc>
 
 <Links Readings & Ref. Material>
