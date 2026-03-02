@@ -7,3 +7,4 @@ Security/.*
 ~$*
 ~*.tmp
 TeamSeven
+src/GO/work/*

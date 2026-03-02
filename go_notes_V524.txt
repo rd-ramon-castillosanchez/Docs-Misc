@@ -36,6 +36,10 @@
 <Misc>
 ====
 
+- Exercise from confluent 
+    https://developer.confluent.io/get-started/go/
+    
+-
 </Misc>
 
 <Links Readings & Ref. Material>
