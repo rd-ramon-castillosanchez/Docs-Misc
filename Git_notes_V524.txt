@@ -192,6 +192,27 @@ so before upload the code rename the local branch
         when finished
             #git flow hotfinish '0.1.1'
 </Git Flow>
+<DevOps flow>
+    - #git clone
+    - #git pull --rebase
+        - undo if merge conflits 
+            - #git rebase --abort
+            - #git pull 
+                - fix merge conflicts
+        - fix manually merge and rebase
+            - never rebase a branch already pushed
+                how to check: #git branch -a
+                How to make VScode as editor
+                #git global --config core.editor "code --wait"
+            #git rebase --interactive HEAD~4
+            in the git-rebase-todo file
+            change the first commit line 
+            -replace [pick] by [edit]
+            -make needed changes and stage them
+             #git add 
+            -#git rebase --continue
+            
+
 <911 commands>
 ============
 - See all the history commits
@@ -258,12 +279,12 @@ so before upload the code rename the local branch
     #git tag [tagname] v1.0.0
     #git show v1.0.0
     #git push origin v1.0.0
-    delete tag locally
+    delete tag local
     #git tag -d [tagname]
     delete tag remote 
     #git push origin -d [tagname] 
 
--Rewritting commits before pusihng or merging code to an up branch
+-Rewritting commits before pushing or merging code to an up branch
   we can use interactive rebase
    #git rebase -i HEAD~x (x the base parent 'commit' to start range to manipulate)
    Min 4:10 on below for more details

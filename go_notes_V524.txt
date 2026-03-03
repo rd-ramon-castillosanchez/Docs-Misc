@@ -12,6 +12,8 @@
      Example:
      func user ==> function only available inside the package
      func User ==> will be expoused and available outside the file where is declared
+     steps to create/use a struct
+    1) Define it
      
             type user struct {
 	                firstName string
@@ -19,6 +21,9 @@
 	                birthdate string
 	                createdAt time.Time
             }
+    2) create variable and assign the new strcut as a type
+            var appUser user
+    
 
 </struct>
 <911 commands>
