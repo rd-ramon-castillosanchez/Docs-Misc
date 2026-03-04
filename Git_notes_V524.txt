@@ -5,6 +5,12 @@
         CLI command:
             #<command>
 </Conventions>
+<Documentation>
+- Oficial documentation
+
+    https://git-scm.com/docs
+
+</Documentation>
 Files states
 - Working files
 - Staging
@@ -54,6 +60,11 @@ Files states
     #git config --global init.defaultBranch main
 *How to clone an specific branch from remote
     #git clone <url> --branch <branch> --single-branch <folder>
+*How to clone :
+        a normal repo to an specific new directory
+            #git clone <url> ../clonerepo
+        a bare repo 
+            #git clone --bare <url> ../clonedbarerepo
 *How to push for a local repo for the first time
     #git remote add origin git@github.com:<url>.git 
     #git push -u origin master
@@ -101,7 +112,7 @@ Cloning
     #git commit -m "Comment"
     Add and commit all files in current working directory
     #git commit -am "Comment"
-- Amend the description of last commit
+- Amend the description of last commit , change only the comment in the last commit
     #git commit -m "[new text]" --amend
         *for older commits use interactive rebase
 - Add newly changed files without new message (forgot in last commit )
@@ -232,12 +243,13 @@ so before upload the code rename the local branch
     #git config --global alias.showld 'log --graph --decorate --oneline'
     #git showld
 - History of a file 
- 1)Checking out the commit as a branch
+ 1)Checking out the commit as a branch (code at a particular point of time)
     #git checkout -B [branchname] [commithash]
+    #git checkout -b repo 4c34db222a9241d4438cef2fbedac0b1072c47aa
 - shows what branch u r on
     #git status
 - Query info about branch and remote
-	# git branch -av
+	#git branch -av
 	#git status -sb
 	
 - Query the origin
@@ -283,6 +295,8 @@ so before upload the code rename the local branch
     #git tag -d [tagname]
     delete tag remote 
     #git push origin -d [tagname] 
+    To an existing commit when you forget at the end add the commit hash
+    #git tag -a 1.0.0 -m"Flat version pre packaging" 2cedf23c7ef58a57fa0a1de45000fc708762c4dd
 
 -Rewritting commits before pushing or merging code to an up branch
   we can use interactive rebase

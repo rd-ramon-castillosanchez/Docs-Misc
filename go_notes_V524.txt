@@ -21,8 +21,37 @@
 	                birthdate string
 	                createdAt time.Time
             }
-    2) create variable and assign the new strcut as a type
+    2) create variable and assign the new struct as a type
             var appUser user
+    3) Assign the values to the instace
+        	appUser = user {
+		                firstName: userfirstName,
+		                lastName: userlastName,
+		                birthdate: userbirthdate,
+		                createdAt: time.Now(),
+	        }
+    3.1) As a convention when creating an instace of a struct a creator or constructor function can be written:
+            so instead of using the 3) we use a constructor function
+            func newUser(firstName, lastName, birthdate string) *user {
+	                    return &user {
+		                                firstName: firstName,
+		                                lastName: lastName,
+		                                birthdate: birthdate,
+		                                createdAt: time.Now(),
+	                    }
+            }
+    3.2) create variable and assign the new struct as a type
+            var appUser *user
+    3.3) and we invoke the constructor function
+            appUser = newUser(userfirstName , userlastName , userbirthdate)
+
+    4) To do something with the data in a struct we can define methods attached to it.
+        for example to print the content
+            func (u user) outputUserDetails(){
+	            fmt.Println(u.firstName, u.lastName, u.birthdate)
+            }
+        and we invoke the method :
+            appUser.outputUserDetails()
     
 
 </struct>
