@@ -271,6 +271,7 @@ Copy and Paste is Yanking and Putting
 
 shift y === Yank
 shift p === Put
+shift j === Normal-mode command will join the current line and the next
 
 Search and replace
 
@@ -298,9 +299,12 @@ $ === end of the line
 
 
  :%s/search_string/replacement_string/g
+
  :3,5s/search_string/replacement_string/g === only between lines 3 to 5
+
  :.$s/search_string/replacement_string/g === only between cursor and the end of the file
 
+ :%s/\n/ /   ==== substitutes *ALL* new lines in file , creating only one long line
 </vi>
 
 

@@ -231,6 +231,8 @@ so before upload the code rename the local branch
     #git log --oneline
     #git reflog (all cronologically)
     #git log --graph --decorate --oneline
+- See info about a particular commit , shows *ALL* modifications contained in that commit
+    #git show [commithash]
 - config
         #git config --list 
         #git config -l
@@ -239,9 +241,11 @@ so before upload the code rename the local branch
         #git config --list --local
 -Alias to shorten often run long commands
     #git config --global alias.show3 'log --all --graph'
-    #git show3
+        #git show3
     #git config --global alias.showld 'log --graph --decorate --oneline'
-    #git showld
+        #git showld
+    #git config --global alias.dog 'log --all --decorate --oneline --graph'
+        #git dog
 - History of a file 
  1)Checking out the commit as a branch (code at a particular point of time)
     #git checkout -B [branchname] [commithash]
@@ -297,6 +301,107 @@ so before upload the code rename the local branch
     #git push origin -d [tagname] 
     To an existing commit when you forget at the end add the commit hash
     #git tag -a 1.0.0 -m"Flat version pre packaging" 2cedf23c7ef58a57fa0a1de45000fc708762c4dd
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 -Rewritting commits before pushing or merging code to an up branch
   we can use interactive rebase
