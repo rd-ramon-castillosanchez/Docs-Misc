@@ -245,14 +245,21 @@ tshark -R  "gtp&&(gtp.message!=0x01&&gtp.message!=0x02)" -ieth1
 http://www.codealias.info/technotes/the_tshark_capture_and_filter_example_page
 
 
+
+
+<vi>
 vi
 ==
 
-<vi>
+move cursor
+============
 
-:%s/<ctrl>v<ctrl>m//g
-:%s/^M//g      === CONTROL-M
-:%s/.$//
+h === lef
+l === right
+j === down
+k === up
+w === a word forward
+b === a word backward
 
 
 a === append to the end of the word
@@ -305,6 +312,13 @@ $ === end of the line
  :.$s/search_string/replacement_string/g === only between cursor and the end of the file
 
  :%s/\n/ /   ==== substitutes *ALL* new lines in file , creating only one long line
+
+ :%s/<ctrl>v<ctrl>m//g
+
+:%s/^M//g      === CONTROL-M (Fix windows to Unix)
+
+:%s/.$//      === any character (.) exactly at the end of the linf ($)
+
 </vi>
 
 
