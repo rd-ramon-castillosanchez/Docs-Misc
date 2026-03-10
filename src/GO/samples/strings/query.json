@@ -1,0 +1,41 @@
+{
+  "configItemTypeName": "message_broker_stream",
+  "searchString": "ncv1.all.sst2799.marktspezifisches-layout.v3",
+  "state": "active",
+  "enableWildcard": "true",
+  "page": 1,
+  "pageSize": 100,
+  "orderBy": "",
+  "orderDescending": false,
+  "showAttributes": ["mbs_name", "mbs_type"],
+  "showProperties": [],
+  "showRelationships": [
+    {
+      "name": "hosting",
+      "role": "hosted by",
+      "relatedConfigItemTypeName": "cluster"
+    },
+    {
+      "name": "ownership",
+      "role": "owned by",
+      "relatedConfigItemTypeName": "product"
+    },
+    {
+      "name": "charging",
+      "role": "charged by",
+      "relatedConfigItemTypeName": "service"
+    },
+    {
+      "name": "charging",
+      "role": "charged by",
+      "relatedConfigItemTypeName": "project"
+    },
+    {
+      "name": "realization",
+      "role": "realizes",
+      "relatedConfigItemTypeName": "interface"
+    }
+  ],
+  "attributeFilters": [],
+  "relationshipFilters": []
+}
