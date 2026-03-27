@@ -23,14 +23,14 @@
             }
     2) create variable and assign the new struct as a type
             var appUser user
-    3) Assign the values to the instace
+    3) Assign the values to the instance
         	appUser = user {
 		                firstName: userfirstName,
 		                lastName: userlastName,
 		                birthdate: userbirthdate,
 		                createdAt: time.Now(),
 	        }
-    3.1) As a convention when creating an instace of a struct a creator or constructor function can be written:
+    3.1) As a convention when creating an instance of a struct a creator or constructor function can be written:
             so instead of using the 3) we use a constructor function
             func newUser(firstName, lastName, birthdate string) *user {
 	                    return &user {
@@ -55,6 +55,22 @@
     
 
 </struct>
+<Interfaces>
+    <Embedded Interfaces>
+    </Embedded Interfaces>
+    <AnyValueType>
+    </AnyValueType>
+    <Dynamic Interfaces>
+    </Dynamic Interfaces>
+    <Generic Interfaces>
+    </GEneric Interfaces>
+</Interfaces>
+<Arrays>
+</Arrays>
+<Slices>
+</Slices>
+<Maps>
+</Maps>
 <911 commands>
 ============
 - #go version

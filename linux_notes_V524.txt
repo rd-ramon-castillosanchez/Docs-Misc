@@ -327,7 +327,8 @@ $ === end of the line
 
 <911 commands>
 ============
-- 
+- convert string in Base64
+    #echo -n password|base64
 </911 commands>
 
 
@@ -340,6 +341,13 @@ $ === end of the line
 ================================
 -HTML docs : 
 	https://www.w3schools.com/html/html_forms_attributes.asp
+
+-IP CIDR block calulator:
+    https://mxtoolbox.com/subnetcalculator.aspx
+
+-Terraform:
+    https://developer.hashicorp.com/terraform/install
+
 </Links Readings & Ref. Material>
 
 
