@@ -68,6 +68,8 @@ Files states
 *How to push for a local repo for the first time
     #git remote add origin git@github.com:<url>.git 
     #git push -u origin master
+    resetting remote 
+        #git remote set-url origin git@<remnoterepo>
 
 Git multiple Devs
 ================
@@ -301,6 +303,16 @@ so before upload the code rename the local branch
     #git push origin -d [tagname] 
     To an existing commit when you forget at the end add the commit hash
     #git tag -a 1.0.0 -m"Flat version pre packaging" 2cedf23c7ef58a57fa0a1de45000fc708762c4dd
+<Notes>
+    -
+</Notes>
+<versioning history>
+1.16.2025
+2.13.2025
+3.27.2026
+
+</versioning history>
+</Subject>
 
 
 
