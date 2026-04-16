@@ -109,6 +109,10 @@ find ./ -name 'IMG_E1777*' -exec stat -L {} \;
 zcat to cat a .gz file
 bzcat for bzip2 files
 
+tar 
+===
+#tar -czvf kafka-acl-generator.tgz templates/ .gitignore *.yaml *.go go.* *.md
+
 +++to change from CET to UTC for example
 >dateconfig  			--- (RH) 
 

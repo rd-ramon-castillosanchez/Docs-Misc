@@ -11,6 +11,12 @@
     https://git-scm.com/docs
 
 </Documentation>
+Custumizations:
+    #git config --global core.editor "vi"
+    or
+    #export GIT_EDITOR=vim
+    0r
+    #git global --config core.editor "code --wait"
 Files states
 - Working files
 - Staging
@@ -206,6 +212,17 @@ so before upload the code rename the local branch
             #git flow hotfinish '0.1.1'
 </Git Flow>
 <DevOps flow>
+    <DevOps trying>
+        - #git clone (repo to work on)
+        - #git branch feature/<ticket>-<description>
+        .
+        .
+        - from main
+            -#git pull
+        - from feature branch
+            -#git merge main
+    </DevOps trying>
+    <DevOps sugessted>
     - #git clone
     - #git pull --rebase
         - undo if merge conflits 
@@ -224,8 +241,8 @@ so before upload the code rename the local branch
             -make needed changes and stage them
              #git add 
             -#git rebase --continue
-            
-
+    <DevOps sugessted>
+</DevOps flow>
 <911 commands>
 ============
 - See all the history commits
