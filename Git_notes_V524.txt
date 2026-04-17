@@ -214,16 +214,22 @@ so before upload the code rename the local branch
             #git flow hotfinish '0.1.1'
 </Git Flow>
 <DevOps flow>
-    <DevOps trying>
+    <DevOps rd-mine workflow>
         - #git clone (repo to work on)
         - #git branch feature/<ticket>-<description>
         .
         .
         - from main
+            -#git switch main
             -#git pull
         - from feature branch
+            -#git switch feature/<description>
             -#git merge main
-    </DevOps trying>
+                -edit commit
+            -Before pushing
+                -never rebase a branch already pushed
+            -#git rebase main
+    </DevOps rd-mine workflow>
     <DevOps sugessted>
     - #git clone
     - #git pull --rebase
