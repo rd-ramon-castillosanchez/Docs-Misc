@@ -1,0 +1,1 @@
+Refers to [AGENTS.md](../src/GO/AGENTS.md) for this repo specific.
