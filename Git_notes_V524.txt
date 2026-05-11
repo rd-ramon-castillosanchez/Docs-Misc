@@ -328,6 +328,8 @@ so before upload the code rename the local branch
     #git push origin -d [tagname] 
     To an existing commit when you forget at the end add the commit hash
     #git tag -a 1.0.0 -m"Flat version pre packaging" 2cedf23c7ef58a57fa0a1de45000fc708762c4dd
+    shows the tag's commit
+    #git show-ref -s mytag
 <Notes>
     -
 </Notes>

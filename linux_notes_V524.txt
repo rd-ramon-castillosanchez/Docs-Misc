@@ -142,6 +142,19 @@ OR
 ssh-copy-id <user@server>
 </ssh>
 
+<bash>
+- Adding in .bash_profile to source bash specially on wsl
+
+## Loads .bashrc
+if [[ -f ~/.bashrc ]] ; then
+        . ~/.bashrc
+fi
+
+ctrl + r ===> repeat command
+
+Redirect stderr to stdout
+command > output.log 2>&1
+</bash>
 How to change the MTU
 ======================
 ifconfig eth1 mtu 1600
