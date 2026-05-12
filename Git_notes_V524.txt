@@ -62,10 +62,13 @@ Files states
     6)
     once readme.txt is manually fixed 
     #git commit -a -m "updating readme.txt file"
-*How to rename a branch
+
+*How to rename a branch (move)
     #git branch -m [oldbranch] [newbranch]
+
 *How to change default Main/Master branch
     #git config --global init.defaultBranch main
+
 *How to clone an specific branch from remote
     #git clone <url> --branch <branch> --single-branch <folder>
 *How to clone :
@@ -77,7 +80,7 @@ Files states
     #git remote add origin git@github.com:<url>.git 
     #git push -u origin master
     resetting remote 
-        #git remote set-url origin git@<remnoterepo>
+        #git remote set-url origin git@<remoterepo>
 
 Git multiple Devs
 ================
@@ -188,6 +191,9 @@ note to avoid any issues normally local repos branch is "master" and github defa
 so before upload the code rename the local branch
  
 #git branch -m master main
+=
+#git branch -move master main
+    -After the above you might need to change to change default Main/Master branch
 
 
 

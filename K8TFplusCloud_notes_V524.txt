@@ -25,7 +25,15 @@
 
 
 <Notes>
--
+-May 12 2026 Investigate and install following K8 tools
+        brew install krew
+        brew install fzf
+        kubectl krew install stern
+        kubectl krew install ctx
+        kubectl krew install ns
+        kubectl krew install resource-capacity
+        To later use , for example:
+                k stern mirror | grep ERROR
 </Notes>
 <versioning history>
 1.16.2025
