@@ -235,6 +235,13 @@ so before upload the code rename the local branch
             -Before pushing
                 -never rebase a branch already pushed
             -#git rebase main
+        - Alternatively
+            Create a new remote branch from main containing fixes/new code/etc.. lazyly made over main
+                #git push origin main:feature/ticket12
+            Deletes the remote branch if needed 
+                #git push origin --delete feature/ticket12
+            Deletes the local tracking of a remote branch
+                #git branch -d origin/feature/ticket12 --remote
     </DevOps rd-mine workflow>
     <DevOps sugessted>
     - #git clone
@@ -255,10 +262,6 @@ so before upload the code rename the local branch
             -make needed changes and stage them
              #git add 
             -#git rebase --continue
-    - Alternatively
-        #git push origin main:feature/ticket12
-        #git branch -d origin/feature/ticket12 --remote
-            This was tested by I had to manually delete the branch in GitHub , even after the command worked locally
     <DevOps sugessted>
 </DevOps flow>
 <911 commands>
