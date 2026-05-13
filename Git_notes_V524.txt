@@ -255,6 +255,10 @@ so before upload the code rename the local branch
             -make needed changes and stage them
              #git add 
             -#git rebase --continue
+    - Alternatively
+        #git push origin main:feature/ticket12
+        #git branch -d origin/feature/ticket12 --remote
+            This was tested by I had to manually delete the branch in GitHub , even after the command worked locally
     <DevOps sugessted>
 </DevOps flow>
 <911 commands>
