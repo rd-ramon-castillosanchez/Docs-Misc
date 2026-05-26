@@ -1,0 +1,38 @@
+<Subject>
+
+<Conventions>
+    In this document as a convention all commands to input
+        in the CLI starts with '#' e.g. #cd $HOME, #cd ~
+        CLI command:
+            #<command>
+</Conventions>
+
+<911 commands>
+</911 commands>
+============
+
+<Misc>
+====
+
+</Misc>
+
+<Links Readings & Ref. Material>
+
+
+</Links Readings & Ref. Material>
+
+
+
+<Notes>
+
+-Containers uses
+    -Linux namespaces
+    -cgroups
+    -ufs
+
+</Notes>
+<versioning history>
+5.19.2026
+
+</versioning history>
+</Subject>
