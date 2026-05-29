@@ -24,6 +24,14 @@ example:
 
 #kubectl delete -f MANIFEST.yml
 
+
+ *How to ouput all key-value pairs stored inside the secret. 
+    #echo <encoded-secret-key-value> | base64 --decode 
+
+*How to generate YAML code for a Kubernetes resource without actually creating it
+    #kubectl create <resource> ... --dry-run=client -o yaml
+
+
 </911 commands>
 ============
 
