@@ -7,6 +7,24 @@
 </Conventions>
 
 <911 commands>
+#kubctl get pods
+
+#kubctl get pods -n NAMESPACE 
+example:
+    #kubctl get pods kube-system (kube-system is a K8 internal NAMESPACE)
+
+#kubctl get namespaces   (display all the namespaces there are)
+
+
+#kubectl apply -f MANIFEST.yml
+
+#kubectl describe RESOURCE RESOURCE_NAME
+
+#kubectl delete RESOURCE RESOURCE_NAME
+
+#kubectl delete -f MANIFEST.yml
+
+</911 commands>
 ============
 
 <Misc>
@@ -34,6 +52,11 @@
         kubectl krew install resource-capacity
         To later use , for example:
                 k stern mirror | grep ERROR
+-Containers uses
+    -Linux namespaces
+    -cgroups
+    -ufs
+
 </Notes>
 <versioning history>
 1.16.2025
