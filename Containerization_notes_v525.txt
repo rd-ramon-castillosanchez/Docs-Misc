@@ -8,6 +8,10 @@
 </Conventions>
 
 <911 commands>
+    - Chekcing docker is running
+        #sudo systemctl status docker
+    - Starting docker 
+        #sudo systemctl start docker
 </911 commands>
 ============
 
@@ -17,7 +21,9 @@
 </Misc>
 
 <Links Readings & Ref. Material>
-
+- https://docs.docker.com/engine/install/ubuntu#install-from-a-package
+- https://docs.docker.com/desktop/setup/install/windows-install/
+- https://nodejs.org/en/download (used fnm instead of nvm)
 
 </Links Readings & Ref. Material>
 
@@ -29,6 +35,8 @@
     -Linux namespaces
     -cgroups
     -ufs
+
+
 
 </Notes>
 <versioning history>
