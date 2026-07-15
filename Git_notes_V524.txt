@@ -6,12 +6,12 @@
             #<command>
 </Conventions>
 <Documentation>
-- Oficial documentation
+- Official documentation
 
     https://git-scm.com/docs
 
 </Documentation>
-Custumizations:
+Customizations:
     #git config --global core.editor "vi"
     or
     #export GIT_EDITOR=vim
@@ -25,11 +25,11 @@ Files states
 - Commit
 -Merging conflicts
 ==================
-    They appeared when a file has been modified and commited in 2 branches,
-    effectvely a file has been updated while also working in a branch, so it 
+    They appeared when a file has been modified and committed in 2 branches,
+    effectively a file has been updated while also working in a branch, so it 
     different that when the branch was created.
 
-    The error occures when trying to merge a branch with its parent (master or main branch)
+    The error occurs when trying to merge a branch with its parent (master or main branch)
     ex.
     1)
     #git switch newbranch
@@ -57,7 +57,7 @@ Files states
     Text changed on new files
     >>>>>>>>>>Updatetext
 
-    5) Manually modify readme.txt taking out the extra text inserted by Git and chosing what
+    5) Manually modify readme.txt taking out the extra text inserted by Git and choosing what
     to leave 
     6)
     once readme.txt is manually fixed 
@@ -85,7 +85,7 @@ Files states
 Git multiple Devs
 ================
 after checking out a local branch , the quicker to merge back to main the better
-otherwise keep it updated as often as posible resolving any merging conflicts sonner rather than later
+otherwise keep it updated as often as possible resolving any merging conflicts sonner rather than later
 process 
     at least daily 
         from your local branch go to your local master branch
@@ -155,7 +155,7 @@ Cloning
     #git fetch origin
 -Update origin from my branch
     #git push origin main
-- Merge a branch into the one swithed to 
+- Merge a branch into the one switched to 
     #git merge -m "comment" [branchnametomergeto]
 - Delete a local branch
     #git branch -d [branchnametodelete]
@@ -168,26 +168,26 @@ Cloning
     https://github.com/github/gitignore
 
 
-Starting a new github repo from local work in progress:
+Starting a new GitHub repo from local work in progress:
 ================================================
 
 
-Creating a repo in github with a commit will generate undisered issue when git faces unrelated history.
-This is because the brandnew repo in github has a initial commit which makes it different
+Creating a repo in GitHub with a commit will generate undesired issue when git faces unrelated history.
+This is because the brand new repo in GitHub has a initial commit which makes it different
 from any local :
 It was fixed by cloning the remote and manually rebasing the local.
 
-another posible solution is to run the command
+another possible solution is to run the command
 git pull origin main --allow-unrelated-histories.
 
-Better create a new repo in Github with no read.me nor License in ordet to not trigger any initil commit 
-and then from the local Repository assuming is already update and witht latest code commited:
+Better create a new repo in GitHub with no read.me nor License in order to not trigger any init commit 
+and then from the local Repository assuming is already update and with latest code committed:
 
 #git remote add origin https://github.com/rjcastillos/{newreponame}.git
 #git branch -M main
 #git push -u origin main
 
-note to avoid any issues normally local repos branch is "master" and github default main one is "main"
+note to avoid any issues normally local repos branch is "master" and GitHub default main one is "main"
 so before upload the code rename the local branch
  
 #git branch -m master main
@@ -236,17 +236,17 @@ so before upload the code rename the local branch
                 -never rebase a branch already pushed
             -#git rebase main
         - Alternatively
-            Create a new remote branch from main containing fixes/new code/etc.. lazyly made over main
+            Create a new remote branch from main containing fixes/new code/etc.. lately made over main
                 #git push origin main:feature/ticket12
             Deletes the remote branch if needed 
                 #git push origin --delete feature/ticket12
             Deletes the local tracking of a remote branch
                 #git branch -d origin/feature/ticket12 --remote
     </DevOps rd-mine workflow>
-    <DevOps sugessted>
+    <DevOps suggested>
     - #git clone
     - #git pull --rebase
-        - undo if merge conflits 
+        - undo if merge conflicts 
             - #git rebase --abort
             - #git pull 
                 - fix merge conflicts
@@ -262,7 +262,7 @@ so before upload the code rename the local branch
             -make needed changes and stage them
              #git add 
             -#git rebase --continue
-    <DevOps sugessted>
+    <DevOps suggested>
 </DevOps flow>
 <911 commands>
 ============
@@ -306,7 +306,7 @@ so before upload the code rename the local branch
     #git rm [filename]
 -Rename a file
     #git mv [filename]
-- Restore a file that was deleted (it has to be commited to Git before deleted)
+- Restore a file that was deleted (it has to be committed to Git before deleted)
     #git restore "[filename]"
 -See the changes of a file
     #git diff [filename]
@@ -323,10 +323,10 @@ so before upload the code rename the local branch
     "Updates were rejected because the remote contains work
       that you do not have locally
     #git reset --soft HEAD~1
-            Move the head back 1 commmit keeping the changes in stage , ready to be commited again
+            Move the head back 1 commit keeping the changes in stage , ready to be commited again
             this is useful when the origin contains changes that are not local , then you can git pull update 
             your base and continue with your work.
--Putting away current state/chagnes while pulling from origin to later put them back
+-Putting away current state/changes while pulling from origin to later put them back
     #git stash
         pull
     #git stash pop
