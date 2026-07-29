@@ -47,7 +47,7 @@ Files states
     4)
     Merge conflict in readme.txt
 
-    In the masterbranch the file(s) with conflcit will show the changes (inside) 
+    In the masterbranch the file(s) with conflict will show the changes (inside) 
     in the way:
     while in the masterbranch
     #vi readme.txt
@@ -85,7 +85,7 @@ Files states
 Git multiple Devs
 ================
 after checking out a local branch , the quicker to merge back to main the better
-otherwise keep it updated as often as possible resolving any merging conflicts sonner rather than later
+otherwise keep it updated as often as possible resolving any merging conflicts sooner rather than later
 process 
     at least daily 
         from your local branch go to your local master branch
