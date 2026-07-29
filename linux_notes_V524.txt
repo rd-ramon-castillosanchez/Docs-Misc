@@ -299,9 +299,9 @@ shift j === Normal-mode command will join the current line and the next
 
 Search and replace
 
-/ === searchs forward (find a word)
-? === searchs backward (find a word)
-n === after searched jumps to next ocurrence 
+/ === searches forward (find a word)
+? === searches backward (find a word)
+n === after searched jumps to next occurrence 
 
 
 shift g   ==== Bottom of the file
@@ -309,14 +309,14 @@ shift g   ==== Bottom of the file
 ctrl + b (back on page at the time)
 ctrl + n (next)
 ctrl + f (one page forward at the time)
-0 === begining of the line
+0 === beginning of the line
 $ === end of the line
 : === Command mode
 :1 [Enter]   Go to page 1
-:set === shows all the vi enviroment variables and its settings
+:set === shows all the vi environment variables and its settings
 :set nu === sets the numbering on (numbers at the left of lines in the vi view)
 :set ic === set ignore case on (bash and BASH are the same)
-:set noic === goes back to case sensitve
+:set noic === goes back to case sensitive
 :r !date === under command mode executes the linux command date and appends it to the open file
 
 
