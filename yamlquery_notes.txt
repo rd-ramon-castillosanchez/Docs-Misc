@@ -1,0 +1,11 @@
+find ./ac* -type f -name "*.yaml" ! -path "*/connectors/*" -exec yq '
+  .. | select(
+    type == "!!map" and
+    .resource.name? != null and
+    (.resource.name | test("^ncv1\\.ac")) and
+    .resource.patternType == "prefix" and
+    .resource.type == "group"
+  )
+' {} \;>
+
+

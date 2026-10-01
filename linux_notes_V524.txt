@@ -219,7 +219,7 @@ ACCEPT     tcp  --  anywhere             anywhere            state NEW tcp dpt:s
 to reboot 
 init 6
 
-How to Kill all the proccess that are on oracle or any user
+How to Kill all the process that are on oracle or any user
 #using cut
 ps -ef|grep oracle|cut -d" " -f4|xargs -i kill -9 {}
 
