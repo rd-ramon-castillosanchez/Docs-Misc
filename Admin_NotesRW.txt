@@ -1,3 +1,5 @@
+Note: All credential-like values in this file are examples only; they are not real or valid credentials.
+
 User: A233C1F
 Laptop: PF5P2T0J 
 wmnubeqs 
