@@ -43,7 +43,11 @@ RPM:
 
 +Upgrade a package 
     #rpm -Fvh mercurial-1.9.2-1.el5.rf.i386.rpm
+*
+===============
 
+*How to convert a markdown document (.md) to word document (.docx)
+ #pandoc inputdocument.md -f gfm -o outputdocument.docx
 
 *
 ===============
