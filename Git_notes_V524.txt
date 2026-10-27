@@ -481,7 +481,7 @@ Enter same passphrase again:
 Your identification has been saved in C:\Users\A233C1F/.ssh/id_ed25519
 Your public key has been saved in C:\Users\A233C1F/.ssh/id_ed25519.pub
 The key fingerprint is:
-SHA256:I5ZCvNXpH0q27y6Makx1Sj+ImXS+dmC8XGO+hmsHd+s ramon.castillosanchez@rewe-group.com
+SHA256:xxx ramon.castillosanchez@rewe-group.com
 The key's randomart image is:
 +--[ED25519 256]--+
 |                 |
