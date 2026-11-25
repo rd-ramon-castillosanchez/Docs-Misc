@@ -19,3 +19,10 @@
 |     2|               |
 |     3|               |
 
+
+- Links
+ - [View README](./README.md)
+ - [Jump to Variations](#common-link-variations)
+
+
+- complete list of emojis https://gist.github.com/rxaviers/7360908

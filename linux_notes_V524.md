@@ -8,7 +8,16 @@
 
 ---
 
+
+
 ## How Tos
+
+### Linux in Windows
+- Windows Subsystem for Linux (WSL)
+  - https://ubuntu.com/wsl
+  - https://learn.microsoft.com/en-us/windows/wsl/install
+  - https://learn.microsoft.com/en-us/windows/wsl/basic-commands?source=recommendations
+
 
 ### OS and System Information
 
